@@ -1,0 +1,37 @@
+
+.card {
+    background-color: black;
+}
+.card {
+    box-shadow: 0 4px 8px rgb(240, 173, 78);
+    border-radius: 10px;
+
+    // Nested .card-body for better readability
+    .card-body {
+        padding: 20px;
+    }
+
+    // Nested .btn and .btn-group .btn for better structure
+    .btn {
+        font-size: 1.2rem;
+        padding: 15px;
+        border: 1px solid white;
+
+        // Nested styles for btn-group .btn
+        .btn-group & {
+            border-radius: 0;
+        }
+    }
+}
+
+// Global form control styling
+.form-control {
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+// Styling for h2
+h2 {
+    margin-bottom: 20px;
+}
