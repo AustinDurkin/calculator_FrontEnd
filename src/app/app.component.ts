@@ -10,4 +10,21 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'calculator_FrontEnd';
+  display: string = "";
+
+  appendInput(value: string): void {
+    this.display += value;
+  }
+  clear(): void{
+    this.display = "";
+
+  }
+  calculate(): void{
+    try{
+      this.display = eval(this.display)
+    }
+    catch (e) {
+      this.display = "Erorr"
+        }
+  }
 }
