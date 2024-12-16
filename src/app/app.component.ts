@@ -21,7 +21,7 @@ export class AppComponent {
   }
   calculate(): void{
     try{
-      this.display = eval(this.display)
+      this.display = eval(this.display) ? eval(this.display) : this.display = ""
     }
     catch (e) {
       this.display = "Erorr"
